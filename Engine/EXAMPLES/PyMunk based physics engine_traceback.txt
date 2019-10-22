@@ -1,0 +1,22 @@
+
+Fri Oct 18 01:00:55 2019
+1571342455.910428 SSTE
+<class 'FileNotFoundError'>
+[Errno 2] No such file or directory: '.\\Res\\potra.ttf'
+  File "D:/Game/Yandex/Pygame Game/EXAMPLES/menu.py", line 375, in <module>
+    main.start()
+  File "D:\Game\Yandex\Pygame Game\main_loop.py", line 122, in start
+    update()
+  File "D:\Game\Yandex\Pygame Game\main_loop.py", line 166, in update
+    gui.draw(self.screen)
+  File "D:\Game\Yandex\Pygame Game\interface.py", line 392, in draw
+    i.draw(surface)
+  File "D:\Game\Yandex\Pygame Game\interface.py", line 392, in draw
+    i.draw(surface)
+  File "D:\Game\Yandex\Pygame Game\interface.py", line 558, in draw
+    self.draw_text(surface)
+  File "D:\Game\Yandex\Pygame Game\interface.py", line 568, in draw_text
+    size=self.text_size)
+  File "D:\Game\Yandex\Pygame Game\interface.py", line 39, in draw_text
+    size)
+

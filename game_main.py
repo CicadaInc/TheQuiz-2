@@ -1,14 +1,14 @@
-try:
-    import Engine.main
-except ImportError as error:
-    import traceback
+import Engine
 
-    traceback.print_exc()
-    print("Error occurred when trying to import Engine.")
-    print("Likely submodule was not initialized")
-    print("Run update_engine.bat")
-    input("Press enter to continue")
-else:
 
-    if __name__ == '__main__':
-        pass
+class GameMain(Engine.main.Main):
+
+    def home(self):
+        from Interface.main_menu import MainMenu
+        self.set_level(None)
+        self.set_gui(MainMenu(main=self))
+
+
+if __name__ == '__main__':
+    main = GameMain()
+    main.start()

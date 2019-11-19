@@ -40,6 +40,14 @@ class MainMenu(Menu):
             self.title.rect = (0, 0, 100, 20)
             self.title.text = "Big label with game name right here"
 
+            self.hint = Element(self)
+            self.hint.rect = (0, 10, 100, 20)
+            self.hint.text = "Debug draw is overridden to True in game_config.py for demonstration and... debug"
+            self.hint = Element(self)
+            self.hint.rect = (0, 20, 100, 20)
+            self.hint.text = "Everything you see is made for example."
+            self.hint.text_size = 10
+
             b = GameButton(self)
             self.start_button = b
             b.rect.size = (15, 5)
